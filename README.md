@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Manav Mishra - Developer Portfolio
 
-## Getting Started
+A premium, high-performance personal developer portfolio built to showcase scalable backend systems, AI architectures, and full-stack capabilities. 
 
-First, run the development server:
+Designed with a "Premium Minimalist" aesthetic featuring a crisp interface, a sleek dark mode toggle, and smooth Framer Motion reveal animations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Portfolio Preview](#) *(Add a screenshot of the hero section here once deployed)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[View Live Portfolio](#) *(Add your Vercel deployment link here)*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework:** [Next.js (App Router)](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/) (for robust type-safety)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) (rapid, clean UI)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/) (smooth scroll reveals)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Theme:** `next-themes` for seamless light/dark mode
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Architecture & Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Fully Responsive:** Mobile-first approach ensuring perfect layout across all devices.
+2. **Glassmorphism Navbar:** Sticky top navigation with a blurred background effect.
+3. **Scroll Animations:** Components smoothly fade and slide in as they enter the viewport.
+4. **Dark Mode Ready:** Intelligent system preference detection with a manual toggle.
+5. **Dynamic Experience Timeline:** Elegant, expanding cards detailing professional history.
+6. **Project Showcase Grid:** CSS Grid layout with hover effects highlighting tech stacks and major achievements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Running Locally
 
-## Deploy on Vercel
+To run this project on your local machine:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MANAV-MISHRA-BYTES/Manav_Mishra_portfolio_website.git
+   cd Manav_Mishra_portfolio_website
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🚀 Deployment Strategy
+
+This project is optimized for deployment on **Vercel**:
+
+1. Push your code to your public GitHub repository.
+2. Go to [Vercel](https://vercel.com/) and create a new project.
+3. Import this GitHub repository.
+4. Leave the default build settings (`npm run build`).
+5. Click **Deploy**. Vercel will automatically deploy updates every time you push to the `main` branch.
+
+## 📬 Contact
+
+**Manav Mishra**
+- [LinkedIn](https://linkedin.com/in/manav-mishra-dev)
+- [GitHub](https://github.com/MANAV-MISHRA-BYTES)
+- [Email](mailto:manavmishra.dev@gmail.com)
