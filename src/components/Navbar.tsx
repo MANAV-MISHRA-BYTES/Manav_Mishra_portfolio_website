@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="text-2xl font-bold tracking-tighter">
-              MANAV<span className="text-foreground/50">.</span>
+              Portfolio<span className="text-foreground/50">.</span>
             </Link>
           </div>
 
