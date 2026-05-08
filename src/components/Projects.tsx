@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
@@ -19,15 +19,15 @@ const projects = [
     date: "May 2025 – Jul 2025",
     description: "An MVC web application tracking parking allocation, dynamic pricing, and revenue reports. Includes secure data handling routes and an interactive real-time administrative dashboard.",
     tech: ["Flask", "SQL", "JavaScript", "Chart.js", "HTML/CSS", "Werkzeug"],
-    github: "#",
+    github: "https://github.com/23f3002755/vehicle-parking-management-system",
     live: "#",
   },
   {
-    title: "Civic & Career AI Portals",
+    title: "Civic Track App",
     date: "Apr 2026 – May 2026",
-    description: "Two distinct web applications built within a strict 48-hour deadline using Google Gemini APIs for natural language processing, including a civic rights query system.",
+    description: "Web application built within a strict 48-hour deadline using Google Gemini APIs for natural language processing, including a civic rights query system.",
     tech: ["Google Gemini API", "Python", "NLP", "Web APIs"],
-    github: "#",
+    github: "https://github.com/MANAV-MISHRA-BYTES/civictrack-app",
     live: "#",
   },
   {
@@ -35,8 +35,9 @@ const projects = [
     date: "Sep 2025 – Oct 2025",
     description: "Web application tracking accident zones and pollution levels across 50+ simulated city nodes using Google Maps APIs, with a smart advertising module for sustainable solutions.",
     tech: ["Google Maps API", "JavaScript", "Web Tech"],
-    github: "#",
+    github: "https://docs.google.com/presentation/d/1ExCPVwiX4JHf2yEI7klbANQlRsRLjYI57CkAtB8Hjus/edit?usp=sharing",
     live: "#",
+    isPresentation: true,
   }
 ];
 
@@ -74,12 +75,15 @@ export default function Projects() {
                     <p className="text-sm font-medium text-foreground/40">{project.date}</p>
                   </div>
                   <div className="flex gap-3">
-                    <a href={project.github} className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/10 transition-colors text-foreground/70 hover:text-foreground">
-                      <FaGithub size={20} />
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/10 transition-colors text-foreground/70 hover:text-foreground">
+                      {/* @ts-ignore - isPresentation is optionally added */}
+                      {project.isPresentation ? <FileText size={20} /> : <FaGithub size={20} />}
                     </a>
-                    <a href={project.live} className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/10 transition-colors text-foreground/70 hover:text-foreground">
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.live !== "#" && (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/10 transition-colors text-foreground/70 hover:text-foreground">
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
 

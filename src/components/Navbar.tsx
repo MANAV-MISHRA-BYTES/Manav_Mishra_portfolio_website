@@ -59,7 +59,7 @@ export default function Navbar() {
               </button>
               
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/179B7Hz4PKtVUHkMma94zrOyEBMOu_b80/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-foreground text-background px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
@@ -111,7 +111,7 @@ export default function Navbar() {
               ))}
               <div className="pt-4 px-3">
                 <a
-                  href="/resume.pdf"
+                  href="https://drive.google.com/file/d/179B7Hz4PKtVUHkMma94zrOyEBMOu_b80/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-foreground text-background px-4 py-3 rounded-md text-base font-medium"

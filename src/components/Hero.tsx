@@ -83,10 +83,11 @@ export default function Hero() {
             <div className="absolute inset-0 bg-foreground/5 rounded-full blur-3xl scale-110"></div>
             
             <div className="relative w-full h-full rounded-full overflow-hidden border border-foreground/10 shadow-2xl bg-foreground/5">
-              {/* Using a placeholder gradient if no image is available. We can swap this for next/image when a real photo is ready. */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-foreground/10 to-transparent flex items-center justify-center">
-                <span className="text-foreground/40 font-semibold text-2xl tracking-widest">PHOTO</span>
-              </div>
+              <img
+                src="https://drive.google.com/uc?export=view&id=1Ssl30PK4pPhj_K1b4gmi3YkyaAzBd67V"
+                alt="Manav Mishra"
+                className="w-full h-full object-cover relative z-10"
+              />
             </div>
           </motion.div>
         </motion.div>
