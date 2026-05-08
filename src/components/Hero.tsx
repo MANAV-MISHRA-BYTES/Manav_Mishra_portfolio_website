@@ -84,7 +84,7 @@ export default function Hero() {
             
             <div className="relative w-full h-full rounded-full overflow-hidden border border-foreground/10 shadow-2xl bg-foreground/5">
               <img
-                src="https://drive.google.com/uc?export=view&id=1Ssl30PK4pPhj_K1b4gmi3YkyaAzBd67V"
+                src="/profile.jpg"
                 alt="Manav Mishra"
                 className="w-full h-full object-cover relative z-10"
               />
