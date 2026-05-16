@@ -3,15 +3,25 @@
 import { motion } from "framer-motion";
 import { ExternalLink, FileText } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-import Image from "next/image";
 
-const projects = [
+
+type Project = {
+  title: string;
+  date: string;
+  description: string;
+  tech: string[];
+  github: string;
+  live: string;
+  isPresentation?: boolean;
+};
+
+const projects: Project[] = [
   {
     title: "Hospital Management System",
     date: "Jan 2026 – Feb 2026",
     description: "A secure, Role-Based Access Control (RBAC) platform. Features asynchronous task queueing for improved response time and a Single Page Application interface with cached data requests.",
     tech: ["Vue 3", "Flask", "Redis", "Celery", "PostgreSQL", "Bootstrap 5"],
-    github: "#",
+    github: "https://github.com/23f3002755/Hospital-Management-System-V2",
     live: "#",
   },
   {
@@ -76,7 +86,6 @@ export default function Projects() {
                   </div>
                   <div className="flex gap-3">
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/10 transition-colors text-foreground/70 hover:text-foreground">
-                      {/* @ts-ignore - isPresentation is optionally added */}
                       {project.isPresentation ? <FileText size={20} /> : <FaGithub size={20} />}
                     </a>
                     {project.live !== "#" && (
